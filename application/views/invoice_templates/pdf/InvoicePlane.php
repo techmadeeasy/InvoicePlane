@@ -103,6 +103,10 @@
     <div class="invoice-details clearfix">
         <table>
             <tr>
+                <td><?php echo 'PO Number' . ':'; ?></td>
+                <td><?php echo $custom_fields['invoice']['PO Number']; ?></td>
+            </tr>
+            <tr>
                 <td><?php echo trans('invoice_date') . ':'; ?></td>
                 <td><?php echo date_from_mysql($invoice->invoice_date_created, true); ?></td>
             </tr>
